@@ -1,0 +1,1 @@
+A princípio um projeto para prática de estudos de back-end e arquitetura de software, feito utilizando express e a arquitetura mvc, o intuito príncipal é adicionar novas funcionalidades confome vou expandindo meus conhecimentos.
