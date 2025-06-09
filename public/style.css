@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p1/47785204-uma-diverso-equipe-do-profissionais-trabalho-juntos-dentro-uma-moderno-escritorio-espaco-exibindo-colaboracao-e-inovacao-dentro-a-ambiente-de-trabalho-gratis-vetor.jpg');
+}
+
+.interface {
+  display: flex;
+  color: white;
+  font-size: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35%;
+  width: 60vw;
+  background-color: rgb(184, 184, 255);
+  border-radius: 10px;
+}
+
+.link{
+  margin-top: 10px;
+  background-color: rgb(96, 96, 196);
+  color: white;
+  text-decoration: none;
+  padding: 7px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.link:hover {
+  border: solid 1px rgb(96, 96, 196);
+  background-color: white;
+  color: rgb(96, 96, 196);
+}

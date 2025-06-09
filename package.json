@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.3",
+    "git": "^0.1.5",
+    "mysql2": "^3.14.1",
+    "nodemon": "^3.1.10",
+    "sequelize": "^6.37.7"
+  },
+  "scripts": {
+    "start": "nodemon index.js localhost 3000"
+  }
+}
