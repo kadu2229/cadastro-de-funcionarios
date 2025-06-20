@@ -1,7 +1,7 @@
 const { Sequelize } = require('sequelize');
 
-const sequelize = new Sequelize('teste','root', '1234',{
-  host: 'localhost',
+const sequelize = new Sequelize('railway','root', 'cwMdOEruvuQTiueRbfNCFhNkomljfrmb',{
+  host: 'crossover.proxy.rlwy.net',
   dialect: 'mysql'
 })
 

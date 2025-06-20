@@ -2,15 +2,19 @@ const conection = require('../dataBase/conection');
 const { DataTypes } = require('sequelize');
 
 const User = conection.define('User', {
-  ocupation: {
+  Name: {
     type: DataTypes.STRING,
     allowNull: false
   },
-  salary: {
+  Ocupation: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  Salary: {
     type: DataTypes.DECIMAL,
     allowNull: false
   },
-  newsletter: {
+  Newsletter: {
     type: DataTypes.BOOLEAN
   }
 })

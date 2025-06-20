@@ -1,73 +1,21 @@
-<style>
-  .page {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p1/47785204-uma-diverso-equipe-do-profissionais-trabalho-juntos-dentro-uma-moderno-escritorio-espaco-exibindo-colaboracao-e-inovacao-dentro-a-ambiente-de-trabalho-gratis-vetor.jpg');
-  }
-
-  .formItem {
-    padding: 5px;
-    border: none;
-    margin-bottom: 10px;
-    border-radius: 5px;
-  }
-
-  .formButton {
-    margin-top: 10px;
-    background-color: rgb(96, 96, 196);
-    color: white;
-    border: none;
-    text-decoration: none;
-    padding: 7px;
-    border-radius: 5px;
-    transition: 0.3s;
-    cursor: pointer;
-  }
-
-  .formButton:hover {
-    border: solid 1px rgb(96, 96, 196);
-    background-color: white;
-    color: rgb(96, 96, 196);
-  }
-
-  .formSection {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .formCheck {
-    margin-bottom: 10px;
-  }
-
-  .interface {
-    display: flex;
-    color: white;
-    font-size: 20px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 35%;
-    width: 60vw;
-    background-color: rgb(184, 184, 255);
-    border-radius: 10px;
-  }
-</style>
 <div class="page">
   <div class="interface">
     <form action="/user/create" method="post">
       <div class="formSection">
-        <label for="ocupation">Função</label>
-        <input placeholder="insira a função" class="formItem" name="ocupation" type="text">
+        <label for="Name">Nome</label>
+        <input placeholder="insira seu nome" class="formItem" name="Name" type="text">
       </div>
       <div class="formSection">
-        <label for="salary">salário</label>
-        <input placeholder="insira o sálario" class="formItem" name="salary" type="number">
+        <label for="Ocupation">Função</label>
+        <input placeholder="insira a função" class="formItem" name="Ocupation" type="text">
+      </div>
+      <div class="formSection">
+        <label for="Salary">salário</label>
+        <input placeholder="insira o sálario" class="formItem" name="Salary" type="number">
       </div>
       <div class="formCheck">
-        <label for="newsletter">Receber Notificações</label>
-        <input type="checkbox" name="newsletter" checked>
+        <label for="Newsletter">Receber Notificações</label>
+        <input type="checkbox" name="Newsletter" checked>
       </div>
       <input class="formButton" type="submit" value="cadastrar">
     </form>

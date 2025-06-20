@@ -1,0 +1,14 @@
+<div class="page">
+  {{#each users}}
+  <div class="card">
+    <h2>{{this.Name}}</h2>
+    <h3>{{this.Ocupation}}</h3>
+    <p>{{this.Salary}}R$</p>
+    <form action="/user/delete/{{this.id}}" method="post">
+      <input class="delete" type="submit" value="Excluir">
+    </form>
+    <a class="link" href="/user/details/{{this.id}}">Detalhes</a>
+    <a class="link" href="/user/update/{{this.id}}">Editar</a>
+  </div>
+  {{/each}}
+</div>

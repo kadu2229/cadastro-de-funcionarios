@@ -1,0 +1,31 @@
+<div class="page">
+  <div class="interface">
+
+    <form action="/user/update/{{user.id}}" method="post">
+      <div class="formSection">
+        <label for="Name">Nome</label>
+        <input value="{{user.Name}}" placeholder="insira seu nome" class="formItem" name="Name" type="text">
+      </div>
+      <div class="formSection">
+        <label for="Ocupation">Cargo</label>
+        <input value="{{user.Ocupation}}" placeholder="insira a função" class="formItem" name="Ocupation" type="text">
+      </div>
+      <div class="formSection">
+        <label for="Salary">Salário</label>
+        <input value="{{user.Salary}}" placeholder="insira o sálario" class="formItem" name="Salary" type="number">
+      </div>
+      {{#if user.Newsletter}}
+        <div class="formCheck">
+          <label for="Newsletter">Receber Notificações</label>
+          <input type="checkbox" name="Newsletter" checked>
+        </div>
+      {{else}}
+        <div class="formCheck">
+          <label for="Newsletter">Receber Notificações</label>
+          <input type="checkbox" name="Newsletter">
+        </div>
+      {{/if}}
+      <input class="formButton" type="submit" value="atualizar">
+    </form>
+  </div>
+</div>

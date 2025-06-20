@@ -1,15 +1,63 @@
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.page{
+.page {
   display: flex;
+  flex-wrap: wrap;
   height: 100vh;
   justify-content: center;
   align-items: center;
   background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p1/47785204-uma-diverso-equipe-do-profissionais-trabalho-juntos-dentro-uma-moderno-escritorio-espaco-exibindo-colaboracao-e-inovacao-dentro-a-ambiente-de-trabalho-gratis-vetor.jpg');
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(184, 184, 255);
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  margin: 20px;
+}
+
+.formItem {
+  padding: 5px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.formButton {
+  margin-top: 10px;
+  background-color: rgb(96, 96, 196);
+  color: white;
+  border: none;
+  text-decoration: none;
+  padding: 7px;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.formButton:hover {
+  border: solid 1px rgb(96, 96, 196);
+  background-color: white;
+  color: rgb(96, 96, 196);
+}
+
+.formSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.formCheck {
+  margin-bottom: 10px;
 }
 
 .interface {
@@ -19,13 +67,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 35%;
+  height: 45%;
   width: 60vw;
   background-color: rgb(184, 184, 255);
   border-radius: 10px;
 }
 
-.link{
+.link {
   margin-top: 10px;
   background-color: rgb(96, 96, 196);
   color: white;
@@ -39,4 +87,22 @@
   border: solid 1px rgb(96, 96, 196);
   background-color: white;
   color: rgb(96, 96, 196);
+}
+
+.delete {
+  margin-top: 10px;
+  background-color: rgb(255, 75, 75);
+  color: white;
+  text-decoration: none;
+  padding: 7px;
+  border-radius: 5px;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.delete:hover {
+  border: solid 1px rgb(255, 75, 75);
+  background-color: white;
+  color: rgb(255, 75, 75);
 }
