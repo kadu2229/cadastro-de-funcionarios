@@ -80,10 +80,8 @@ app.post('/user/create', async (req, res) => {
   res.redirect('/users')
 })
 
-try {
-  conection.sync().then(() => {
-    app.listen(3000);
-  });
-} catch (err) {
-  console.log(err);
-}
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
+});
+
