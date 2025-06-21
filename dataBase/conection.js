@@ -1,15 +1,13 @@
-const { Sequelize } = require('sequelize');
+const { Sequelize } = require("sequelize");
+require("dotenv").config();
 
-const sequelize = new Sequelize('railway','root', 'cwMdOEruvuQTiueRbfNCFhNkomljfrmb',{
-  host: 'crossover.proxy.rlwy.net',
-  dialect: 'mysql'
-})
+const sequelize = new Sequelize(process.env.DATABASE_URL, {
+  dialect: "mysql",
+  dialectOptions: {
+    ssl: {
+      rejectUnauthorized: true,
+    },
+  },
+});
 
-try{
-  sequelize.authenticate()
-  console.log('conexão com banco de dados bem sucedida')
-} catch(err) {
-  console.log(err)
-}
-
-module.exports = sequelize
+module.exports = sequelize;
