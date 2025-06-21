@@ -64,14 +64,18 @@ app.post('/user/create', async (req, res) => {
   res.redirect('/users');
 });
 
-// Testa conexão com o banco e sobe o servidor
+// Conecta e sincroniza o banco de dados, depois sobe o servidor
 conection.authenticate()
   .then(() => {
     console.log("Conexão com banco de dados bem sucedida");
+    return conection.sync({ force: false });
+  })
+  .then(() => {
+    console.log("Tabelas sincronizadas com o banco.");
     app.listen(process.env.PORT || 3000, () => {
       console.log(`Servidor rodando na porta ${process.env.PORT || 3000}`);
     });
   })
   .catch(err => {
-    console.error("Erro ao conectar ao banco de dados:", err);
+    console.error("Erro ao conectar ou sincronizar com o banco de dados:", err);
   });
